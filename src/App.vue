@@ -27,7 +27,9 @@
               </v-card-text>
 
               <v-card-actions>
-                <v-btn>Ver mais</v-btn>
+                <v-btn variant="outlined" color="primary">Ver mais</v-btn>
+                <v-btn prepend-icon="mdi-cart" variant="tonal" color="blue">Comprar</v-btn>
+                <v-btn icon="mdi-home" variant="tonal" color="blue"></v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
