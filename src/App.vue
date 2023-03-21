@@ -6,11 +6,12 @@
 
     <v-main>
       <v-container>
-        <h1 class="hidden-md-and-down text-h5 text-lg-h3">Dashboard</h1>
+        <v-btn color="purple-darken-3">Submit</v-btn>
+        <h1 class="text-blue-lighten-2 bg-blue-darken-4 py-2 px-4">Dashboard</h1>
 
         <div class="d-flex flex-column flex-md-row justify-space-between">
           <div
-            class="w-100 pa-4 border rounded-lg elevation-2"
+            class="bg-grey-lighten-1 w-100 pa-4 border rounded-lg elevation-2"
           >teste</div>
           <div
             class="w-100 pa-4 border rounded-lg elevation-2"
