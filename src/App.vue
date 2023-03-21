@@ -1,7 +1,22 @@
 <template>
   <v-app theme="dark">
     <v-app-bar flat class="border-b">
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <v-app-bar-title>Meu app</v-app-bar-title>
+
+      <template #append>
+        <v-btn icon class="mr-2">
+          <v-badge dot color="info">
+            <v-icon icon="mdi-bell-outline"></v-icon>
+          </v-badge>
+        </v-btn>
+
+        <v-avatar>
+          <v-img
+            cover
+            src="https://thumbs.dreamstime.com/z/nerd-portrait-young-cheerful-businessman-smiling-36201399.jpg"></v-img>
+        </v-avatar>
+      </template>
     </v-app-bar>
 
     <v-main>
@@ -9,13 +24,13 @@
         <h1>Dashboard</h1>
 
         <v-row>
-          <v-col cols="12" md="4" lg="3">
+          <v-col cols="12" sm="6" md="4" lg="3">
             <v-card flat class="border">
               <v-img
                 class="align-end text-white"
                 src="https://images.pexels.com/photos/13435510/pexels-photo-13435510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               >
-                <v-card-title>Top 10 Praia na Bahia</v-card-title>
+                <v-card-title>Top 10 Praias na Bahia</v-card-title>
               </v-img>
 
               <v-card-subtitle class="pt-3">Salvador</v-card-subtitle>
@@ -29,18 +44,17 @@
               <v-card-actions>
                 <v-btn variant="outlined" color="primary">Ver mais</v-btn>
                 <v-btn prepend-icon="mdi-cart" variant="tonal" color="blue">Comprar</v-btn>
-                <v-btn icon="mdi-home" variant="tonal" color="blue"></v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
 
-          <v-col cols="12" md="4" lg="3">
+          <v-col cols="12" sm="6" md="4" lg="3">
             <v-card flat class="border">
               <v-img
                 class="align-end text-white"
                 src="https://images.pexels.com/photos/13435510/pexels-photo-13435510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               >
-                <v-card-title>Top 10 Praia na Bahia</v-card-title>
+                <v-card-title>Top 10 Praias na Bahia</v-card-title>
               </v-img>
 
               <v-card-subtitle class="pt-3">Salvador</v-card-subtitle>
@@ -52,18 +66,21 @@
               </v-card-text>
 
               <v-card-actions>
-                <v-btn>Ver mais</v-btn>
+                <v-card-actions>
+                  <v-btn variant="outlined" color="primary">Ver mais</v-btn>
+                  <v-btn prepend-icon="mdi-cart" variant="tonal" color="blue">Comprar</v-btn>
+                </v-card-actions>
               </v-card-actions>
             </v-card>
           </v-col>
 
-          <v-col cols="12" md="4" lg="3">
+          <v-col cols="12" sm="6" md="4" lg="3">
             <v-card flat class="border">
               <v-img
                 class="align-end text-white"
                 src="https://images.pexels.com/photos/13435510/pexels-photo-13435510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               >
-                <v-card-title>Top 10 Praia na Bahia</v-card-title>
+                <v-card-title>Top 10 Praias na Bahia</v-card-title>
               </v-img>
 
               <v-card-subtitle class="pt-3">Salvador</v-card-subtitle>
@@ -75,7 +92,36 @@
               </v-card-text>
 
               <v-card-actions>
-                <v-btn>Ver mais</v-btn>
+                <v-card-actions>
+                  <v-btn variant="outlined" color="primary">Ver mais</v-btn>
+                  <v-btn prepend-icon="mdi-cart" variant="tonal" color="blue">Comprar</v-btn>
+                </v-card-actions>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12" sm="6" md="4" lg="3">
+            <v-card flat class="border">
+              <v-img
+                class="align-end text-white"
+                src="https://images.pexels.com/photos/13435510/pexels-photo-13435510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              >
+                <v-card-title>Top 10 Praias na Bahia</v-card-title>
+              </v-img>
+
+              <v-card-subtitle class="pt-3">Salvador</v-card-subtitle>
+
+              <v-card-text>
+                <div>Rio vermelho</div>
+
+                <div>Lorem ipsum dolor sit amet</div>
+              </v-card-text>
+
+              <v-card-actions>
+                <v-card-actions>
+                  <v-btn variant="outlined" color="primary">Ver mais</v-btn>
+                  <v-btn prepend-icon="mdi-cart" variant="tonal" color="blue">Comprar</v-btn>
+                </v-card-actions>
               </v-card-actions>
             </v-card>
           </v-col>
