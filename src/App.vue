@@ -6,15 +6,7 @@
 
     <v-main>
       <v-container>
-        <h1 class="text-h6">Meu app</h1>
-        <h2>Meu app</h2>
-        <h3>Meu app</h3>
-        <h4>Meu app</h4>
-        <h5>Meu app</h5>
-        <h6>Meu app</h6>
-        <br><br>
-        <div class="text-subtitle-1">Subtitle 1</div>
-        <div class="text-caption">Caption</div>
+        <h1 class="hidden-md-and-down text-h5 text-lg-h3">Dashboard</h1>
 
         <div class="d-flex justify-space-between">
           <div
