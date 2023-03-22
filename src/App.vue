@@ -1,5 +1,5 @@
 <template>
-  <v-app theme="">
+  <v-app theme="test">
     <v-navigation-drawer v-model="isDrawerOpen">
       <v-list>
         <v-list-subheader>Menu</v-list-subheader>
@@ -57,7 +57,8 @@
 
     <v-main>
       <v-container>
-        <h1 class="mb-6">Dashboard</h1>
+        <v-btn>Teste theme</v-btn>
+        <h1 class="mb-6 text-brand">Dashboard</h1>
 
         <v-card flat class="border mb-4">
           <div class="d-flex justify-space-between">
@@ -76,13 +77,12 @@
                   <v-card-text>
                     <v-row>
                       <v-col>
-                        <v-text-field label="Nome" variant="outlined"></v-text-field>
+                        <v-text-field label="Nome"></v-text-field>
                       </v-col>
 
                       <v-col>
                         <v-text-field
                           label="Email"
-                          variant="outlined"
                           :rules="emailRules"
                         ></v-text-field>
                       </v-col>
@@ -90,7 +90,6 @@
 
                     <v-select
                       label="Cargo"
-                      variant="outlined"
                       :items="['Admin', 'Gerente', 'Convidado']"
                     >
                     </v-select>
