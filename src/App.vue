@@ -31,11 +31,27 @@
           </v-badge>
         </v-btn>
 
-        <v-avatar>
-          <v-img
-            cover
-            src="https://thumbs.dreamstime.com/z/nerd-portrait-young-cheerful-businessman-smiling-36201399.jpg"></v-img>
-        </v-avatar>
+        <v-menu>
+          <template #activator="{ props }">
+            <v-avatar v-bind="props">
+              <v-img
+                cover
+                src="https://thumbs.dreamstime.com/z/nerd-portrait-young-cheerful-businessman-smiling-36201399.jpg"></v-img>
+            </v-avatar>
+          </template>
+
+          <v-card min-width="200px">
+            <v-list :lines="false" density="compact" nav>
+              <v-list-item prepend-icon="mdi-account-outline">
+                <v-list-item-title>Meu perfil</v-list-item-title>
+              </v-list-item>
+
+              <v-list-item prepend-icon="mdi-heart-outline">
+                <v-list-item-title>Favoritos</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-card>
+        </v-menu>
       </template>
     </v-app-bar>
 
