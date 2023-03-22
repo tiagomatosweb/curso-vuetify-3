@@ -64,7 +64,7 @@
             <v-card-title>Últimos usuários</v-card-title>
 
             <v-card-title>
-              <v-btn @click="isDialogOpen = true" variant="tonal" size="small">Adicionar usuário</v-btn>
+              <v-btn @click="isDialogOpen = true" variant="tonal" size="small" :ripple="false">Adicionar usuário</v-btn>
 
               <v-dialog
                 v-model="isDialogOpen"
