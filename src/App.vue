@@ -57,7 +57,48 @@
 
     <v-main>
       <v-container>
-        <h1>Dashboard</h1>
+        <h1 class="mb-6">Dashboard</h1>
+
+        <v-card flat class="border mb-4">
+          <v-card-title>Últimos usuários</v-card-title>
+
+          <v-table>
+            <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Cargo</th>
+              <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Fulano</td>
+              <td>fulano@gmail.com</td>
+              <td>Admin</td>
+              <td>
+                <v-btn variant="tonal" color="primary">Editar</v-btn>
+              </td>
+            </tr>
+            <tr>
+              <td>Cicrano</td>
+              <td>cicrano@gmail.com</td>
+              <td>Gerente</td>
+              <td>
+                <v-btn variant="tonal" color="primary">Editar</v-btn>
+              </td>
+            </tr>
+            <tr>
+              <td>Beltrano</td>
+              <td>beltrano@gmail.com</td>
+              <td>Convidado</td>
+              <td>
+                <v-btn variant="tonal" color="primary">Editar</v-btn>
+              </td>
+            </tr>
+            </tbody>
+          </v-table>
+        </v-card>
 
         <v-row>
           <v-col cols="12" sm="6" md="4" lg="3">
